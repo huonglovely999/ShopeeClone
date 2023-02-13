@@ -1,0 +1,202 @@
+.header {
+    width: 100%;
+    height: 120px;
+    background-image: linear-gradient(0, #fe6433, #f53e2d);
+}
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+    /* ==> Cả hai bay ra xa */
+}
+.header__navbar-list {
+    list-style: none;
+    padding-left: 0;
+}
+.header__navbar-item {
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+}
+.header__navbar-item:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.header__navbar-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+/* *QR code */
+.header__navbar-item--qr {
+    z-index: 5;
+}
+.header__navbar-qrcode {
+    width: 130px;
+    background-color: white;
+    display: none;
+    position: absolute;
+}
+.header__navbar-qrapps {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    text-align: center;
+}
+.header__navbar-item--qr:hover .header__navbar-qrcode {
+    display: flex;
+    opacity: 1;
+    top: 2.5rem;
+    z-index: 5;
+}
+/******** HEADER__NARBAR__SEARCHBAR ******/
+.header__searchbar {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.header__searchbarsearch {
+    padding-left: 2rem;
+    display: flex;
+    align-items: center;
+}
+.header__searchbar .header__searchbaricon a {
+    font-size: 25px;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    align-items: baseline;
+}
+.header__searchbar .header__searchbaricon i {
+    font-size: 29px;
+    padding-right: 5px;
+}
+.form-inline {
+    display: flex;
+    align-items: center;
+}
+.form-inline i {
+    padding: 12px 20px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 15%;
+}
+.header__searchbarinput {
+    display: flex;
+    flex: 1;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    width: 800px;
+    height: 40px;
+    border: 3px solid #fe6433;
+}
+.header__searchbar-history {
+    position: absolute;
+    top: 45px;
+    left: 17%;
+}
+
+.header__searchbar-history > a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    padding: 4px;
+}
+.header__searchbar-cart {
+    font-size: 20px;
+    color: white;
+    padding-left: 25px;
+}
+/* ****HEADER NOTIFICATION****** */
+.navbar__notify {
+    text-align: inherit;
+    width: 100%;
+    list-style: none;
+}
+.navbar__notify > a {
+    display: flex;
+    margin: 10px -20px;
+}
+
+.header__notify {
+    position: absolute;
+    top: 100%;
+    width: 400px;
+    right: 0;
+    background-color: white;
+    z-index: 5;
+    display: none;
+}
+.header__navbar-item:hover .header__notify {
+    display: block;
+}
+.header__notify > ul {
+    display: flex;
+    padding-top: 5px;
+    flex-direction: column;
+}
+.header__notify-item {
+    color: black;
+    margin: 0px 15px;
+    font-size: 15px;
+    opacity: 0.5;
+}
+
+.header__notify-img {
+    width: 50px;
+    height: 50px;
+}
+.header__notify-name {
+    color: black;
+}
+.header__notify-description {
+    color: rgb(67, 62, 62);
+    font-size: 13px;
+}
+.header__notify-info {
+    padding-left: 10px;
+}
+/************** SLIDER *******************/
+.slider {
+    padding-top: 2rem;
+    width: 100%;
+}
+.slider .slider__grid-item {
+    display: flex;
+}
+.slider__grid,
+.grid-first {
+    margin: 3px;
+}
+.slider__grid .grid-second > img {
+    width: 400px;
+}
+.slider__menu {
+    margin: auto;
+    margin-top: 2rem;
+}
+.slider__menu-ads > .slider__menu-adsinfo {
+    width: 100%;
+    text-align: center;
+}
+.slider__menu-ads {
+    display: flex;
+}
+.slider__menu-ads .slider__menu-adsinfo img {
+    width: 50%;
+}
+.slider__menu-ads .slider__menu-adsinfo span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 13px;
+}
+.slider__menu-adsinfo:hover {
+    scale: 1.1`;
+}

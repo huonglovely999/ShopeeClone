@@ -121,6 +121,7 @@
 .navbar__notify > a {
     display: flex;
     margin: 10px -20px;
+    line-height: 35px;
 }
 
 .header__notify {
@@ -145,6 +146,8 @@
     margin: 0px 15px;
     font-size: 15px;
     opacity: 0.5;
+    height: 30px;
+    line-height: 30px;
 }
 
 .header__notify-img {
@@ -199,4 +202,59 @@
 }
 .slider__menu-adsinfo:hover {
     scale: 1.1;
+}
+/* MENU */
+.menu {
+    background-color: rgba(229, 232, 235, 0.926);
+    height: 500px;
+}
+.menu__slider {
+    margin-top: 2rem;
+    position: relative;
+}
+.menu__slider-item {
+    position: absolute;
+    top: 1rem;
+    background-color: white;
+    width: 100%;
+}
+
+/* DANH MỤC */
+.menu__slider-item h3 {
+    padding-left: 20px;
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    font-size: 25px;
+    font-weight: 100;
+}
+.menu__slider-main {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+.menu__slider-detail {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.menu__slider-select > img {
+    width: 100px;
+}
+.menu__slider-select > p {
+    font-size: 13px;
+    font-weight: 500;
+}
+.menu__slider-detail > li {
+    width: 120px;
+    text-align: center;
+    border: 0.3px solid rgb(241, 238, 238);
+}
+.menu__slider-detail > li > a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.menu__slider-detail > li:hover {
+    border: 1px solid rgba(203, 197, 197, 0.937);
 }

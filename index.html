@@ -7,16 +7,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
     <!-- Bootstrap CSS v5.2.1 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./asset/font/fontawesome-free-6.3.0-web/css/all.css">
     <link rel="stylesheet" href="./asset/font/fontawesome-free-6.2.1-web/css/all.css">
     <link rel="stylesheet" href="./asset/css/base.css">
     <link rel="stylesheet" href="./asset/css/main.css">
+
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="/path/to/slick.css">
     <link rel="stylesheet" href="/path/to/slick-theme.css">
+
 </head>
 
 <body>
@@ -26,7 +32,8 @@
                 <div class="header__navbar">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item"><a href="#">Kênh Người Bán</a></li>
-                        <li class="header__navbar-item"><a href="#">Trở thành Người bán Shopee</a></li>
+                        <li class="header__navbar-item"><a href="https://shopee.vn/m/dang-ky-ban-hang-shopee">Trở thành
+                                Người bán Shopee</a></li>
                         <li class="header__navbar-item header__navbar-item--qr">
                             <a href="#">Tải ứng dụng</a>
                             <div class="header__navbar-qrcode">
@@ -95,19 +102,29 @@
                             </a>
                             <a href="#">Hỗ trợ</a>
                         </li>
-                        <li class="header__navbar-item">
+                        <li class="header__navbar-item nav__language">
                             <a href="#" class="header__navbar-icon">
-                                <i class="fa-thin fa-earth-americas"></i>
+                                <i class="fas fa-globe-europe"></i>
                             </a>
                             <a href="#">Tiếng Việt</a>
+                            <i class="fa-solid fa-chevron-down" style="color:white"></i>
+                            <div class="header__navbar-itemev">
+                                <div class="header__navbar-language">
+                                    <a href="#">
+                                        <p>Tiếng Việt</p>
+                                    </a>
+                                    <a href="#">
+                                        <p>Tiếng Anh</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="https://shopee.vn/buyer/signup?next=https%3A%2F%2Fshopee.vn%2F">Đăng ký</a>
 
                         </li>
                         <li class="header__navbar-item">
-                            <a href="#">Đăng ký</a>
-
-                        </li>
-                        <li class="header__navbar-item">
-                            <a href="#">Đăng Nhập</a>
+                            <a href="https://shopee.vn/buyer/login?next=https%3A%2F%2Fshopee.vn%2F">Đăng Nhập</a>
                         </li>
                     </ul>
                 </div>
@@ -137,7 +154,54 @@
                             <a href="">Thu Nhỏ Lỗ Chân Lông Body</a>
                         </div>
                         <div class="header__searchbar-cart">
-                            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                            <div class="searchbar__cartlistitem">
+                                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                                <div class="header__searchbar-cartitem">
+                                    <div class="header__cartitemheader">
+                                        <p>sản phẩm mới thêm</p>
+                                    </div>
+                                    <div class="searchbar__cartbar-item">
+                                        <ul>
+                                            <li class="cartitem__info"><a href="#">
+                                                    <img src="./asset/img/cartItem.jpg" alt="">
+                                                    <p>🔥 SALE 🔥 Máy trạm đồ họa HP Z2 Mini G4 Workstation Core i7,
+                                                        Xeon E
+                                                    </p>
+                                                    <span class="cart__item-price">đ5400000</span>
+                                                </a></li>
+                                            <li class="cartitem__info"><a href="#">
+                                                    <img src="./asset/img/cartItem1.jpg" alt="">
+                                                    <p>Dù Che Mưa Che Nắng Ngăn Tia UV
+                                                    </p>
+                                                    <span class="cart__item-price">đ50000</span>
+                                                </a></li>
+                                            <li class="cartitem__info"><a href="#">
+                                                    <img src="./asset/img/cartItem2.jpg" alt="">
+                                                    <p>Áo Khoác dù Underfined ẢNH THẬT
+                                                    </p>
+                                                    <span class="cart__item-price">đ149000</span>
+                                                </a></li>
+                                            <li class="cartitem__info"><a href="#">
+                                                    <img src="./asset/img/cartItem3.jpg" alt="">
+                                                    <p>Điện thoại Xiaomi 11T Pro 5G (8GB/128GB) Chính hãng mới 100
+                                                    </p>
+                                                    <span class="cart__item-price">đ2500000</span>
+                                                </a></li>
+                                            <li class="cartitem__info"><a href="#">
+                                                    <img src="./asset/img/cartItem4.jpg" alt="">
+                                                    <p>[Amour Good boy] Nước Hoa Nam
+                                                    </p>
+                                                    <span class="cart__item-price">đ120000</span>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="searchbar__cartbar-button">
+                                        <a href="#"><button>
+                                                <p>Xem Giỏ Hàng</p>
+                                            </button></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -148,61 +212,57 @@
             <div class="slider__grid-item grid">
                 <div class="grid-first">
                     <div>
-                        <div id="carouselExampleIndicators" class="carousel slide">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                                    aria-label="Slide 4"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                                    aria-label="Slide 5"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-                                    aria-label="Slide 6"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
-                                    aria-label="Slide 7"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
-                                    aria-label="Slide 8"></button>
-                            </div>
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                            </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="./asset/img/slider1.jpg" class="d-block w-100" alt="...">
+                                    <img class="d-block w-100" src="./asset/img/slider1.jpg" alt="First slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="./asset/img/slider2.jpg" class="d-block w-100" alt="...">
+                                    <img class="d-block w-100" src="./asset/img/slider2.jpg" alt="First slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="./asset/img/slider3.jpg" class="d-block w-100" alt="...">
+                                    <img class="d-block w-100" src="./asset/img/slider3.jpg" alt="First slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="./asset/img/slider4.jpg" class="d-block w-100" alt="...">
+                                    <img class="d-block w-100" src="./asset/img/slider4.jpg" alt="First slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="./asset/img/slider5.jpg" class="d-block w-100" alt="...">
+                                    <img class="d-block w-100" src="./asset/img/slider5.jpg" alt="First slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="./asset/img/slider6.jpg" class="d-block w-100" alt="...">
+                                    <img class="d-block w-100" src="./asset/img/slider6.jpg" alt="First slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="./asset/img/slider7.jpg" class="d-block w-100" alt="...">
+                                    <img class="d-block w-100" src="./asset/img/slider7.jpg" alt="First slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="./asset/img/slider8.jpg" class="d-block w-100" alt="...">
+                                    <img class="d-block w-100" src="./asset/img/slider8.jpg" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./asset/img/slider9.jpg" alt="First slide">
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
+                                <span class="sr-only">Next</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -440,23 +500,1265 @@
             </div>
         </section>
 
-
-
-        </section class=" body">
-        <section>
-
-        </section>
-        <section class="footer">
-            <!-- place footer here -->
-        </section>
-
-
-
-
-
+        <section class="flashsave grid">
+            <div class="flashsave__content">
+                <div class="flashsave__header">
+                    <div class="flashsave__sub">
+                        <div class="flashsave__subhead">
+                            <img src="./asset/img/flashsave.png" alt="">
+                        </div>
+                        <div class="flashsave__count">
+                            <div class="flashsave__countnum">
+                                <p>1</p>
+                            </div>
+                            <div class="flashsave__countnum">
+                                <p>30</p>
+                            </div>
+                            <div class="flashsave__countnum">
+                                <p>40</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flashsave__submore">
+                        <a href="#">Xem tất cả
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="flashsave__body">
+                    <div class="flashsave__product">
+                        <div class="flashsave__product-content">
+                            <img src="./asset/img/flashsave-product.jpg" alt="">
+                        </div>
+                        <div class="flashsave__product-info">
+                            <div class="flashsave__product-header">
+                                <h2>đ359000</h2>
+                            </div>
+                            <div class="flashsave__product-body">
+                                <p>đang bán chạy</p>
+                                <span class="flashsave__child"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flashsave__product">
+                        <div class="flashsave__product-content">
+                            <img src="./asset/img/flashsave-product1.jpg" alt="">
+                        </div>
+                        <div class="flashsave__product-info">
+                            <div class="flashsave__product-header">
+                                <h2>đ265000</h2>
+                            </div>
+                            <div class="flashsave__product-body">
+                                <p>đang bán chạy</p>
+                                <span class="flashsave__child"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flashsave__product">
+                        <div class="flashsave__product-content">
+                            <img src="./asset/img/flashsave-product2.jpg" alt="">
+                        </div>
+                        <div class="flashsave__product-info">
+                            <div class="flashsave__product-header">
+                                <h2>đ352000</h2>
+                            </div>
+                            <div class="flashsave__product-body">
+                                <p>đang bán chạy</p>
+                                <span class="flashsave__child"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flashsave__product">
+                        <div class="flashsave__product-content">
+                            <img src="./asset/img/flashsave-product3.jpg" alt="">
+                        </div>
+                        <div class="flashsave__product-info">
+                            <div class="flashsave__product-header">
+                                <h2>đ4000</h2>
+                            </div>
+                            <div class="flashsave__product-body">
+                                <p>đang bán chạy</p>
+                                <span class="flashsave__child"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flashsave__product">
+                        <div class="flashsave__product-content">
+                            <img src="./asset/img/flashsave-product4.jpg" alt="">
+                        </div>
+                        <div class="flashsave__product-info">
+                            <div class="flashsave__product-header">
+                                <h2>đ1000</h2>
+                            </div>
+                            <div class="flashsave__product-body">
+                                <p>đang bán chạy</p>
+                                <span class="flashsave__child"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flashsave__product">
+                        <div class="flashsave__product-content">
+                            <img src="./asset/img/flashsave-product5.png" alt="">
+                        </div>
+                        <div class="flashsave__product-info">
+                            <div class="flashsave__product-header">
+                                <h2>đ59000</h2>
+                            </div>
+                            <div class="flashsave__product-body">
+                                <p>đang bán chạy</p>
+                                <span class="flashsave__child"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
 
+    <section class="body grid__body">
+        <div class="shopee__mall-head">
+            <div class="shopee__mall">
+                <div class="shopee__mall-subhead">
+                    <a href="https://shopee.vn/mall">SHOPEE MALL</a>
+                    <ul>
+                        <li><img src="./asset/img/7 ngay tra hang.png" alt="">7 Ngày Miễn Phí Trả Hàng</li>
+                        <li><img src="./asset/img/hang chinh hang.png" alt=""> Hàng Chính Hãng 100%</li>
+                        <li><img src="./asset/img/mien phi giao hang.png" alt="">Miễn Phí Vận Chuyển</li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="#">Xem tất cả
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="shopee__mall-body">
+            <div class="shopee__mall-slider grid">
+                <div id="carouselExampleControls" class="carousel slide mall__carousel-left" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item shopee__mallcarousel active">
+                            <img class="d-block" src="./asset/img/mallimg.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item shopee__mallcarousel">
+                            <img class="d-block" src="./asset/img/mallimg1.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item shopee__mallcarousel">
+                            <img class="d-block" src="./asset/img/mallimg2.jpg" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="mall__swiper">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper__down">
+                            <a href="" class="swiper__img">
+                                <img src="./asset/img/swiper.png" alt="">
+                                <p>Mua là có quà</p>
+                            </a>
+                            <a href="" class="swiper__img">
+                                <img src="./asset/img/swiper1.png" alt="">
+                                <p>Nội y Sabina 9k</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide swiper__down">
+                            <a href="" class="swiper__img">
+                                <img src="./asset/img/swiper2.png" alt="">
+                                <p>Mua là có quà</p>
+                            </a>
+                            <a href="" class="swiper__img">
+                                <img src="./asset/img/swiper3.png" alt="">
+                                <p>Da xinh quà xịn</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide swiper__down">
+                            <a href="" class="swiper__img">
+                                <img src="./asset/img/swiper4.png" alt="">
+                                <p>Sale chào hè 50%</p>
+                            </a>
+                            <a href="" class="swiper__img">
+                                <img src="./asset/img/swiper5.png" alt="">
+                                <p>Mua là có quà</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide swiper__down">
+                            <a href="" class="swiper__img">
+                                <img src="./asset/img/swiper6.png" alt="">
+                                <p>Siêu ưu đãi độc quyền</p>
+                            </a>
+                            <a href="" class="swiper__img">
+                                <img src="./asset/img/swiper7.png" alt="">
+                                <p>Ưu đãi đến 40%</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide swiper__down">
+                            <a href="" class="swiper__img">
+                                <img src="./asset/img/swiper8.png" alt="">
+                                <p>Điện thoại sale khủng</p>
+                            </a>
+                            <a href="" class="swiper__img">
+                                <img src="./asset/img/swiper9.png" alt="">
+                                <p>Mua 2 tặng 1</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide swiper__down">
+                            <a href="" class="swiper__img">
+                                <img src="./asset/img/swiper10.png" alt="">
+                                <p>Voucher đến 1 triệu</p>
+                            </a>
+                            <a href="" class="swiper__img">
+                                <img src="./asset/img/swiper11.png" alt="">
+                                <p>Ưu đãi đến 50%</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide swiper__down">
+                            <a href="" class="swiper__img">
+                                <img src="./asset/img/swiper12.png" alt="">
+                                <p>Giảm đến 30%</p>
+                            </a>
+                            <a href="" class="swiper__img">
+                                <img src="./asset/img/swiper13.png" alt="">
+                                <p>Collagen da khỏe từ trong</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="body__hinttoday grid">
+        <div class="body__hint-header">
+            <div class="shopee__mall">
+                <div class="shopee__mall-subhead">
+                    <a href="https://shopee.vn/mall">Tìm Kiếm Hàng Đầu</a>
+                </div>
+                <div>
+                    <a href="#">Xem tất cả
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="body__hint-body grid">
+            <!-- Swiper -->
+            <div class="swiper mySwiper hint__container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide body__hint-item">
+                        <div class="body__hint-subitem">
+                            <img src="./asset/img/hint.jpg" alt="">
+                            <p>Áo Thun Local Brand</p>
+                        </div>
+                        <div class="body__hint-subhint">
+                            <p>Bán 58k+ / tháng</p>
+                        </div>
+                        <div class="body__hint-topsell">
+                            <p>Top</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide body__hint-item">
+                        <div class="body__hint-subitem">
+                            <img src="./asset/img/hint1.jpg" alt="">
+                            <p>Bao Cao Su</p>
+                        </div>
+                        <div class="body__hint-subhint">
+                            <p>Bán 56k+ / tháng</p>
+                        </div>
+                        <div class="body__hint-topsell">
+                            <p>Top</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide body__hint-item">
+                        <div class="body__hint-subitem">
+                            <img src="./asset/img/hint2.jpg" alt="">
+                            <p>Son Kem Lì</p>
+                        </div>
+                        <div class="body__hint-subhint">
+                            <p>Bán 103k+ / tháng</p>
+                        </div>
+                        <div class="body__hint-topsell">
+                            <p>Top</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide body__hint-item">
+                        <div class="body__hint-subitem">
+                            <img src="./asset/img/hint3.jpg" alt="">
+                            <p>Túi Xách Nữ</p>
+                        </div>
+                        <div class="body__hint-subhint">
+                            <p>Bán 51k+ / tháng</p>
+                        </div>
+                        <div class="body__hint-topsell">
+                            <p>Top</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide body__hint-item">
+                        <div class="body__hint-subitem">
+                            <img src="./asset/img/hint4.jpg" alt="">
+                            <p>Ốp Lưng Iphone</p>
+                        </div>
+                        <div class="body__hint-subhint">
+                            <p>Bán 226k+ / tháng</p>
+                        </div>
+                        <div class="body__hint-topsell">
+                            <p>Top</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide body__hint-item">
+                        <div class="body__hint-subitem">
+                            <img src="./asset/img/hint5.jpg" alt="">
+                            <p>Bút Mực Gel</p>
+                        </div>
+                        <div class="body__hint-subhint">
+                            <p>Bán 80k+ / tháng</p>
+                        </div>
+                        <div class="body__hint-topsell">
+                            <p>Top</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide body__hint-item">
+                        <div class="body__hint-subitem">
+                            <img src="./asset/img/hint6.jpg" alt="">
+                            <p>Balo Thời Trang</p>
+                        </div>
+                        <div class="body__hint-subhint">
+                            <p>Bán 70k+ / tháng</p>
+                        </div>
+                        <div class="body__hint-topsell">
+                            <p>Top</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide body__hint-item">
+                        <div class="body__hint-subitem">
+                            <img src="./asset/img/hint7.jpg" alt="">
+                            <p>Son Dưỡng</p>
+                        </div>
+                        <div class="body__hint-subhint">
+                            <p>Bán 150k+ / tháng</p>
+                        </div>
+                        <div class="body__hint-topsell">
+                            <p>Top</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide body__hint-item">
+                        <div class="body__hint-subitem">
+                            <img src="./asset/img/hint8.jpg" alt="">
+                            <p>Kính Cường Lực</p>
+                        </div>
+                        <div class="body__hint-subhint">
+                            <p>Bán 300k+ / tháng</p>
+                        </div>
+                        <div class="body__hint-topsell">
+                            <p>Top</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide body__hint-item">
+                        <div class="body__hint-subitem">
+                            <img src="./asset/img/hint9.jpg" alt="">
+                            <p>Quần Ulzangg</p>
+                        </div>
+                        <div class="body__hint-subhint">
+                            <p>Bán 78k+ / tháng</p>
+                        </div>
+                        <div class="body__hint-topsell">
+                            <p>Top</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide body__hint-item">
+                        <div class="body__hint-subitem">
+                            <img src="./asset/img/hint10.jpg" alt="">
+                            <p>Lego</p>
+                        </div>
+                        <div class="body__hint-subhint">
+                            <p>Bán 350k+ / tháng</p>
+                        </div>
+                        <div class="body__hint-topsell">
+                            <p>Top</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide body__hint-item">
+                        <div class="body__hint-subitem">
+                            <img src="./asset/img/hint11.jpg" alt="">
+                            <p>Quần Lót Nam</p>
+                        </div>
+                        <div class="body__hint-subhint">
+                            <p>Bán 38k+ / tháng</p>
+                        </div>
+                        <div class="body__hint-topsell">
+                            <p>Top</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide body__hint-item">
+                        <div class="body__hint-subitem">
+                            <img src="./asset/img/hint12.jpg" alt="">
+                            <p>Serum Dưỡng Da</p>
+                        </div>
+                        <div class="body__hint-subhint">
+                            <p>Bán 70k+ / tháng</p>
+                        </div>
+                        <div class="body__hint-topsell">
+                            <p>Top</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide body__hint-item">
+                        <div class="body__hint-subitem">
+                            <img src="./asset/img/hint13.jpg" alt="">
+                            <p>Nước Hoa</p>
+                        </div>
+                        <div class="body__hint-subhint">
+                            <p>Bán 38k+ / tháng</p>
+                        </div>
+                        <div class="body__hint-topsell">
+                            <p>Top</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide body__hint-item">
+                        <div class="body__hint-subitem">
+                            <img src="./asset/img/hint14.jpg" alt="">
+                            <p>Quần Âu Nam</p>
+                        </div>
+                        <div class="body__hint-subhint">
+                            <p>Bán 38k+ / tháng</p>
+                        </div>
+                        <div class="body__hint-topsell">
+                            <p>Top</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide body__hint-item">
+                        <div class="body__hint-subitem">
+                            <img src="./asset/img/hint15.jpg" alt="">
+                            <p>Chăn Ga Gối Nệm</p>
+                        </div>
+                        <div class="body__hint-subhint">
+                            <p>Bán 80k+ / tháng</p>
+                        </div>
+                        <div class="body__hint-topsell">
+                            <p>Top</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide body__hint-item">
+                        <div class="body__hint-subitem">
+                            <img src="./asset/img/hint16.jpg" alt="">
+                            <p>Ví Nữ</p>
+                        </div>
+                        <div class="body__hint-subhint">
+                            <p>Bán 58k+ / tháng</p>
+                        </div>
+                        <div class="body__hint-topsell">
+                            <p>Top</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide body__hint-item">
+                        <div class="body__hint-subitem">
+                            <img src="./asset/img/hint17.jpg" alt="">
+                            <p>Bút Kẻ Chân Mày</p>
+                        </div>
+                        <div class="body__hint-subhint">
+                            <p>Bán 158k+ / tháng</p>
+                        </div>
+                        <div class="body__hint-topsell">
+                            <p>Top</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide body__hint-item">
+                        <div class="body__hint-subitem">
+                            <img src="./asset/img/hint18.jpg" alt="">
+                            <p>Nước Tẩy Trang</p>
+                        </div>
+                        <div class="body__hint-subhint">
+                            <p>Bán 278k+ / tháng</p>
+                        </div>
+                        <div class="body__hint-topsell">
+                            <p>Top</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide body__hint-item">
+                        <div class="body__hint-subitem">
+                            <img src="./asset/img/hint19.jpg" alt="">
+                            <p>Ốp Lưng Iphone 5</p>
+                        </div>
+                        <div class="body__hint-subhint">
+                            <p>Bán 132k+ / tháng</p>
+                        </div>
+                        <div class="body__hint-topsell">
+                            <p>Top</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+        </div>
+    </section>
+
+
+    <section class="full__item grid">
+        <div class="full__item-header">Gợi Ý Hôm Nay</div>
+        <div class="full__item-body">
+            <div class="full__item-subbody">
+                <!-- Mở ra là dài lắm -->
+                <ul class="full__item-grid">
+                    <li class="full__item-griditem"><a href="">
+                            <img src="./asset/img/full-item1.jpg" alt="">
+                            <p>Váy Black Nữ Màu Đen Cực Kỳ Sang Sịn, Đầm Nữ Tiểu Thư Màu Đen Sống Ảo</p>
+                            <div class="full__item-gp">
+                                <div class="full__item-price">đ69000</div>
+                                <div class="full__item-sell">Đã bán 395</div>
+                            </div>
+                        </a></li>
+                    <li class="full__item-griditem"><a href="">
+                            <img src="./asset/img/full-item2.jpg" alt="">
+                            <p>Dép Bông Quai Ngang Phủ Lông Dày Đế Cao 5cm Dễ Thương Thời Trang Mùa Thu Đông 2022
+                                Pine191</p>
+                            <div class="full__item-gp">
+                                <div class="full__item-price">đ89000</div>
+                                <div class="full__item-sell">Đã bán 2,6k</div>
+                            </div>
+                        </a></li>
+                    <li class="full__item-griditem"><a href="">
+                            <img src="./asset/img/full-item3.jpg" alt="">
+                            <p>[Mã FATREND2102 giảm tới 30k đơn 99k] Ví ngắn nữ mini cầm tay phong cách retro hàn quốc
+                            </p>
+                            <div class="full__item-gp">
+                                <div class="full__item-price">đ36000</div>
+                                <div class="full__item-sell">Đã bán 2,8k</div>
+                            </div>
+                        </a></li>
+                    <li class="full__item-griditem"><a href="">
+                            <img src="./asset/img/full-item4.jpg" alt="">
+                            <p>Túi Xách Nữ Đeo Chéo DâY Xích Dự Tiệc Đi Làm sang chảnh Daisy Store18 TX49</p>
+                            <div class="full__item-gp">
+                                <div class="full__item-price">đ1000</div>
+                                <div class="full__item-sell">Đã bán 96</div>
+                            </div>
+                        </a></li>
+                    <li class="full__item-griditem"><a href="">
+                            <img src="./asset/img/full-item5.jpg" alt="">
+                            <p>set trà sữa trân châu Phúc long</p>
+                            <div class="full__item-gp">
+                                <div class="full__item-price">đ15000</div>
+                                <div class="full__item-sell">Đã bán 849</div>
+                            </div>
+                        </a></li>
+                    <li class="full__item-griditem"><a href="">
+                            <img src="./asset/img/full-item6.jpg" alt="">
+                            <p>Đồ bộ thun nam 🚚 FREESHIP 🚚 Nguyên sét quần áo thể thao nam mẫu in hình núi Japan mẫu
+                                mới</p>
+                            <div class="full__item-gp">
+                                <div class="full__item-price">đ39000</div>
+                                <div class="full__item-sell">Đã bán 4,5k</div>
+                            </div>
+                        </a></li>
+                </ul>
+                <ul class="full__item-grid">
+                    <li class="full__item-griditem"><a href="">
+                            <img src="./asset/img/full-item7.jpg" alt="">
+                            <p>Váy Dây Chéo Buộc Cổ Khoá Lưng Tay Phồng Ulzzang Hàn Quốc</p>
+                            <div class="full__item-gp">
+                                <div class="full__item-price">đ59000</div>
+                                <div class="full__item-sell">Đã bán 507</div>
+                            </div>
+                        </a></li>
+                    <li class="full__item-griditem"><a href="">
+                            <img src="./asset/img/full-item8.jpg" alt="">
+                            <p>Quần ống rộng nỉ nhung tăm nam nữ Unisex kiểu quần dài ống suông cạp chun lưng cao có dây
+                                rút chỉnh eo</p>
+                            <div class="full__item-gp">
+                                <div class="full__item-price">đ24000</div>
+                                <div class="full__item-sell">Đã bán 2,1k</div>
+                            </div>
+                        </a></li>
+                    <li class="full__item-griditem"><a href="">
+                            <img src="./asset/img/full-item9.jpg" alt="">
+                            <p>(Bán Buôn – Sỉ) Son kem Lì HERORANGE Chính Hãng Hàng Nội Địa Trung Vỏ Cam Vuông Lên Màu
+                                Cực Đẹp</p>
+                            <div class="full__item-gp">
+                                <div class="full__item-price">đ9000</div>
+                                <div class="full__item-sell">Đã bán 8k</div>
+                            </div>
+                        </a></li>
+                    <li class="full__item-griditem"><a href="">
+                            <img src="./asset/img/full-item10.jpg" alt="">
+                            <p>kệ đựng đồ mỹ phẩm đa năng bằng nhựa - nhiều ngăn ( loại 29.18.13 cm chắc đẹp)</p>
+                            <div class="full__item-gp">
+                                <div class="full__item-price">đ29000</div>
+                                <div class="full__item-sell">Đã bán 16k</div>
+                            </div>
+                        </a></li>
+                    <li class="full__item-griditem"><a href="">
+                            <img src="./asset/img/full-item11.jpg" alt="">
+                            <p>[Xả hàng tết] Áo hoodie nỉ bông các loại - Áo nỉ có mũ dày 2 lớp unises - D01</p>
+                            <div class="full__item-gp">
+                                <div class="full__item-price">đ55000</div>
+                                <div class="full__item-sell">Đã bán 901</div>
+                            </div>
+                        </a></li>
+                    <li class="full__item-griditem"><a href="">
+                            <img src="./asset/img/full-item12.jpg" alt="">
+                            <p>Móng Tay Giả Hình Nơ Đính Ngọc Trai Thời Trang Thu Đông Cho Nữ</p>
+                            <div class="full__item-gp">
+                                <div class="full__item-price">đ6000</div>
+                                <div class="full__item-sell">Đã bán 5,5k</div>
+                            </div>
+                        </a></li>
+                </ul>
+                <ul class="full__item-grid">
+                    <li class="full__item-griditem"><a href="">
+                            <img src="./asset/img/full-item13.jpg" alt="">
+                            <p>[Mã FATREND2102 giảm tới 30k đơn 99k] Áo Khoác ANE DRT Form Rộng Nỉ Dày Có Mũ Ulzzang
+                                Unisex Nam Nữ Hàn Quốc(Hàng Sẵn)</p>
+                            <div class="full__item-gp">
+                                <div class="full__item-price">đ85000</div>
+                                <div class="full__item-sell">Đã bán 963</div>
+                            </div>
+                        </a></li>
+                    <li class="full__item-griditem"><a href="">
+                            <img src="./asset/img/full-item14.jpg" alt="">
+                            <p>100 tờ Tranh dán tường Anime, poster dán tường Anime manga trang trí phòng, decor góc học
+                                tập làm việc Anime Zone AZ</p>
+                            <div class="full__item-gp">
+                                <div class="full__item-price">đ12000</div>
+                                <div class="full__item-sell">Đã bán 8,3k</div>
+                            </div>
+                        </a></li>
+                    <li class="full__item-griditem"><a href="">
+                            <img src="./asset/img/full-item15.jpg" alt="">
+                            <p>(Free ship toàn quốc) Dép sục nữ thắt nơ bản to cực xinh</p>
+                            <div class="full__item-gp">
+                                <div class="full__item-price">đ59000</div>
+                                <div class="full__item-sell">Đã bán 27k</div>
+                            </div>
+                        </a></li>
+                    <li class="full__item-griditem"><a href="">
+                            <img src="./asset/img/full-item16.jpg" alt="">
+                            <p>Nhẫn Hở Bằng Thép Không Gỉ Thiết Kế Trái Tim Phong Cách Cổ Điển Có Thể Điều Chỉnh Kích Cỡ
+                            </p>
+                            <div class="full__item-gp">
+                                <div class="full__item-price">đ2500</div>
+                                <div class="full__item-sell">Đã bán 10,6k</div>
+                            </div>
+                        </a></li>
+                    <li class="full__item-griditem"><a href="">
+                            <img src="./asset/img/full-item17.jpg" alt="">
+                            <p>[Mã FATREND2102 giảm tới 30k đơn 99k] Áo Khoác Cardigan 2 Sọc Tay XÁM ĐEN NÂU Form Rộng
+                                Nữ</p>
+                            <div class="full__item-gp">
+                                <div class="full__item-price">đ69000</div>
+                                <div class="full__item-sell">Đã bán 725</div>
+                            </div>
+                        </a></li>
+                    <li class="full__item-griditem"><a href="">
+                            <img src="./asset/img/full-item18.jpg" alt="">
+                            <p>DÉP SIÊU NHẸ HÌNH GẤU NAM NỮ THỜI TRANG (ĐẶT MUA TĂNG LÊN 2 SIZE SO VỚI PHOM CHUẨN)</p>
+                            <div class="full__item-gp">
+                                <div class="full__item-price">đ13000</div>
+                                <div class="full__item-sell">Đã bán 2,8k</div>
+                            </div>
+                        </a></li>
+                </ul>
+                <ul class="full__item-grid">
+                    <li class="full__item-griditem"><a href="">
+                            <img src="./asset/img/full-item19.jpg" alt="">
+                            <p>Bộ rổ nhựa kèm chậu thau 6 món đựng đồ đa năng cho nhà bếp Shop Tiện Ích</p>
+                            <div class="full__item-gp">
+                                <div class="full__item-price">đ9600</div>
+                                <div class="full__item-sell">Đã bán 2,9k</div>
+                            </div>
+                        </a></li>
+                    <li class="full__item-griditem"><a href="">
+                            <img src="./asset/img/full-item20.jpg" alt="">
+                            <p>Bộ 13 Cọ Trang Điểm Lông Mềm</p>
+                            <div class="full__item-gp">
+                                <div class="full__item-price">đ7800</div>
+                                <div class="full__item-sell">Đã bán 10k</div>
+                            </div>
+                        </a></li>
+                    <li class="full__item-griditem"><a href="">
+                            <img src="./asset/img/full-item21.jpg" alt="">
+                            <p>Bộ ngủ cosplay hầu gái viền trắng gợi cảm 488</p>
+                            <div class="full__item-gp">
+                                <div class="full__item-price">đ88000</div>
+                                <div class="full__item-sell">Đã bán 299</div>
+                            </div>
+                        </a></li>
+                    <li class="full__item-griditem"><a href="">
+                            <img src="./asset/img/full-item22.jpg" alt="">
+                            <p>Mô hình Kimetsu No Yaiba figure Demon Slayer Agatsuma Zenitsu cao 16 cm - figure thanh
+                                gươm diệt quỷ</p>
+                            <div class="full__item-gp">
+                                <div class="full__item-price">đ29000</div>
+                                <div class="full__item-sell">Đã bán 2,8k</div>
+                            </div>
+                        </a></li>
+                    <li class="full__item-griditem"><a href="">
+                            <img src="./asset/img/full-item23.jpg" alt="">
+                            <p>[Mã FATREND2102 giảm tới 30k đơn 99k] ÁO CARDIGAN, ÁO KHOÁC Nữ Form Rộng Viền Túi Đen
+                                Trắng</p>
+                            <div class="full__item-gp">
+                                <div class="full__item-price">đ59000</div>
+                                <div class="full__item-sell">Đã Bán đ6000</div>
+                            </div>
+                        </a></li>
+                    <li class="full__item-griditem"><a href="">
+                            <img src="./asset/img/full-item24.jpg" alt="">
+                            <p>Dép Xăng Đan, Dép Quai Ngang. Hàng Đẹp Đế Cao Su Đúc Không Thấm Nước Đủ Size 37-43 (LV
+                                Kem)</p>
+                            <div class="full__item-gp">
+                                <div class="full__item-price">đ14560</div>
+                                <div class="full__item-sell">Đã bán 507</div>
+                            </div>
+                        </a></li>
+                </ul>
+                <ul class="full__item-grid">
+                    <li class="full__item-griditem"><a href="">
+                            <img src="./asset/img/full-item25.jpg" alt="">
+                            <p>Túi xách nữ công sở đẹp tote da pu để vừa A4 kẹp nách đeo vai đi học đi chơi thời trang
+                                cao cấp giá rẻ</p>
+                            <div class="full__item-gp">
+                                <div class="full__item-price">đ73000</div>
+                                <div class="full__item-sell">Đã bán 3,8k</div>
+                            </div>
+                        </a></li>
+                    <li class="full__item-griditem"><a href="">
+                            <img src="./asset/img/full-item26.jpg" alt="">
+                            <p>Dụng Cụ Sửa Chữa Đa Năng 46 Chi Tiết-Bộ Tovit Bỏ Túi Nhỏ Gọn Tháo Sửa Điện Thoại Laptop
+                                24 Đầu Kèm Bao Da</p>
+                            <div class="full__item-gp">
+                                <div class="full__item-price">đ45000</div>
+                                <div class="full__item-sell">Đã bán 973</div>
+                            </div>
+                        </a></li>
+                    <li class="full__item-griditem"><a href="">
+                            <img src="./asset/img/full-item27.jpg" alt="">
+                            <p>Túi xách tự đan lông xù đeo vai cá tính túi handmade</p>
+                            <div class="full__item-gp">
+                                <div class="full__item-price">đ24000</div>
+                                <div class="full__item-sell">Đã bán 4,9k</div>
+                            </div>
+                        </a></li>
+                    <li class="full__item-griditem"><a href="">
+                            <img src="./asset/img/full-item28.jpg" alt="">
+                            <p>[ ĐÈN VAN ] đèn xe đạp thể thao đầy đủ màu sắc DV001</p>
+                            <div class="full__item-gp">
+                                <div class="full__item-price">đ2000</div>
+                                <div class="full__item-sell">Đã bán 4,4k</div>
+                            </div>
+                        </a></li>
+                    <li class="full__item-griditem"><a href="">
+                            <img src="./asset/img/full-item29.jpg" alt="">
+                            <p>[Mã FATREND2102 giảm tới 30k đơn 99k] Áo Khoác Cardigan Trắng Nâu Túi Gấu Nữ form rộng
+                                xinh xắn</p>
+                            <div class="full__item-gp">
+                                <div class="full__item-price">đ65000</div>
+                                <div class="full__item-sell">Đã bán 7,9k</div>
+                            </div>
+                        </a></li>
+                    <li class="full__item-griditem"><a href="">
+                            <img src="./asset/img/full-item30.jpg" alt="">
+                            <p>Áo Khoác Nỉ Unisex Kéo Khoá Homies Liền Mũ In Hình Thánh Giá CROSS( Hàng Sẵn, Ảnh Thật)
+                            </p>
+                            <div class="full__item-gp">
+                                <div class="full__item-price">đ79000</div>
+                                <div class="full__item-sell">Đã bán 2,3k</div>
+                            </div>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="full__item-buttonmore">
+                <button class="more">Xem Thêm</button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class=" footer grid">
+        <!-- place footer here -->
+        <div class="footer__header">
+            <h4>SHOPEE - GÌ CŨNG CÓ, MUA HẾT Ở SHOPEE</h4>
+            <p>Shopee - ứng dụng mua sắm trực tuyến thú vị, tin cậy, an toàn và miễn phí! Shopee là nền tảng giao dịch
+                trực tuyến hàng
+                đầu ở Đông Nam Á, có trụ sở chính ở Singapore, đã có mặt ở khắp các khu vực <em
+                    style="font-weight: 500;">Singapore, Malaysia,
+                    Indonesia, Thái Lan,
+                    Philippines, Đài Loan, Brazil, México & Colombia.</em> Với sự đảm bảo của Shopee, bạn sẽ mua hàng
+                trực tuyến
+                an tâm và nhanh
+                chóng hơn bao giờ hết!</p>
+            <h5">MUA SẮM VÀ BÁN HÀNG ONLINE ĐƠN GIẢN, NHANH CHÓNG VÀ AN TOÀN</h5>
+                <p>Nếu bạn đang tìm kiếm một trang web để mua và bán hàng trực tuyến thì Shopee.vn là một sự lựa chọn
+                    tuyệt
+                    vời dành cho
+                    bạn. Shopee là trang thương mại điện tử cho phép người mua và người bán tương tác và trao đổi dễ
+                    dàng
+                    thông tin về sản
+                    phẩm và chương trình khuyến mãi của shop. Do đó, việc mua bán trên Shopee trở nên nhanh chóng và đơn
+                    giản hơn. Bạn có
+                    thể trò chuyện trực tiếp với nhà bán hàng để hỏi trực tiếp về mặt hàng cần mua. Còn nếu bạn muốn tìm
+                    mua
+                    những dòng sản
+                    phẩm chính hãng, uy tín, Shopee Mall chính là sự lựa chọn lí tưởng dành cho bạn. Để bạn có thể dễ
+                    dàng
+                    khi tìm hiểu và
+                    sử dụng sản phẩm, <a href="#">Shopee Blog - trang blog thông tin chính thức của Shopee</a> - sẽ giúp
+                    bạn
+                    có thể tìm được
+                    cho mình các
+                    kiến thức về xu hướng thời trang, review công nghệ, mẹo làm đẹp, tin tức tiêu dùng và deal giá tốt
+                    bất
+                    ngờ.</p>
+                <p>Đến với Shopee, cơ hội để trở thành một nhà bán hàng dễ dàng hơn bao giờ hết. Chỉ với vài thao tác
+                    trên
+                    ứng dụng, bạn đã
+                    có thể đăng bán ngay những sản phẩm của mình. Không những thế, các nhà bán hàng có thể <a
+                        href="#">tự
+                        tạo chương
+                        trình khuyến mãi</a>
+                    trên Shopee để thu hút người mua với những sản phẩm có mức giá hấp dẫn. Khi đăng nhập tại Shopee
+                    Kênh
+                    người bán, bạn có
+                    thể dễ dàng phân loại sản phẩm, theo dõi đơn hàng, chăm sóc khách hàng và cập nhập ngay các hoạt
+                    động
+                    của shop.</p>
+                <h5>TẢI ỨNG DỤNG SHOPEE NGAY ĐỂ MUA BÁN ONLINE MỌI LÚC, MỌI NƠI</h5>
+                <ul class="footer__header-app">
+                    <p>Ưu điểm của ứng dụng Shopee là cho phép bạn mua và bán hàng mọi lúc, mọi nơi. Bạn có thể tải ứng
+                        dụng
+                        Shopee cũng như
+                        đăng sản phẩm bán hàng một cách nhanh chóng và tiện lợi. Ngoài ra, ứng dụng Shopee còn có những
+                        ưu
+                        điểm sau:</p>
+                    <li>Giao diện thân thiện, đơn giản, dễ sử dụng. Bạn sẽ dễ dàng thấy được ngay những sản phẩm nổi bật
+                        cũng như dễ dàng tìm
+                        đến các ô tìm kiếm, giỏ hàng hoặc tính năng chat liền tay</li>
+                    <li>Ứng dụng tích hợp công nghệ quản lý đơn mua và bán hàng tiện lợi trên cùng một tài khoản. Bạn sẽ
+                        vừa
+                        là người mua hàng,
+                        vừa là người bán hàng rất linh hoạt, dễ dàng.
+                    </li>
+                    <li>Cập nhập thông tin khuyến mãi,<a href="#">Shopee Flash Sale</a> nhanh chóng và liên tục</li>
+                </ul>
+                <p>Tại Shopee, bạn có thể lưu các mã giảm giá Shopee và mã miễn phí vận chuyển toàn quốc. Bên cạnh đó,
+                    Shopee cũng sẽ có
+                    những chiến dịch khuyến mãi lớn hằng năm như Shopee 2.2, Siêu hội tiêu dùng 15.3, Shopee 4.4 sale,
+                    Shopee 5.5 sale,
+                    Shopee sale 7.7, Shopee sale 8.8, Shopee sale 9.9, Shopee 10.10 sale, Shopee 11.11 sale, Shopee Sale
+                    sinh nhật; Khuyến
+                    Mãi Tết thả ga săn sale quà Tết chất lượng. Đây là thời điểm để người mua hàng có thể nhanh tay chọn
+                    ngay cho mình những
+                    mặt hàng ưa thích với mức giá giảm kỉ lục. Ngoài ra, bạn còn có thể thỏa thích săn sale vào các ngày
+                    trong tháng như
+                    Sale giữa tháng và Sale cuối tháng đón lương về.</p>
+                <h5>MUA HÀNG HIỆU CAO CẤP GIÁ TỐT TẠI SHOPEE</h5>
+                <p>Bên cạnh Shopee Premium, Shopee còn có rất nhiều khuyến mãi khủng cho hàng hiệu giảm đến 50%. Cộng
+                    với mã giao hàng miễn
+                    phí, Shopee cũng có các mã giảm giá được phân phối mỗi tháng từ rất nhiều gian hàng chính hãng tham
+                    gia chương trình
+                    khuyến mãi này. Bên cạnh đó, Shopee còn tập hợp rất nhiều thương hiệu đình đám được các nhà bán lẻ
+                    uy tín phân phối bán
+                    trên Shopee, top sản phẩm hot deal cho bạn săn sale luôn cập nhật mỗi giờ, mỗi ngày, đem đến cho bạn
+                    sự lựa chọn đa
+                    dạng, từ các hãng mỹ phẩm nổi tiếng hàng đầu như Kiehl's, MAC, Foreo, SK-II, Estee Lauder,... Đến
+                    những thương hiệu công
+                    nghệ nổi tiếng như: camera hành trình Gopro, máy ảnh Fuifilm, webcam Hikvision, máy đọc sách
+                    Kindle,... Tại Shopee, bạn
+                    có thể dễ dàng tìm thấy các thương hiệu giày thể thao phổ biến hiện nay như: New Balance, Nike,
+                    Vans, Crocs,...</p>
+                <h5>MUA HÀNG CHÍNH HÃNG TỪ CÁC THƯƠNG HIỆU LỚN VỚI SHOPEE</h5>
+                <p>Mua hàng trên Shopee luôn là một trải nghiệm ấn tượng. Dù bạn đang có nhu cầu mua bất kỳ mặt hàng
+                    thời trang nam, thời
+                    trang nữ, đồng hồ, điện thoại, nước rửa tay khô hay khẩu trang N95 thì Shopee cũng sẽ đảm bảo cung
+                    cấp cho bạn những sản
+                    phẩm ưng ý. Bên cạnh đó, Shopee cũng có sự tham gia của các thương hiệu hàng đầu thế giới ở đa dạng
+                    nhiều lĩnh vực khác
+                    nhau. Trong đó có thể kể đến Samsung, OPPO, Xiaomi, Innisfree, Unilever, P&G, Biti’s,...Các thương
+                    hiệu này hiện cũng đã
+                    có cửa hàng chính thức trên Shopee Mall với hàng trăm mặt hàng chính hãng, được cập nhập liên tục.
+                    Là một kênh bán hàng
+                    uy tín, Shopee luôn cam kết mang lại cho khách hàng những trải nghiệm mua sắm online giá rẻ, an toàn
+                    và tin cậy. Mọi
+                    thông tin về người bán và người mua đều được bảo mật tuyệt đối. Các hoạt động giao dịch thanh toán
+                    tại Shopee luôn được
+                    đảm bảo diễn ra nhanh chóng, an toàn. Một vấn đề nữa khiến cho các khách hàng luôn quan tâm đó chính
+                    là mua hàng trên
+                    Shopee có đảm bảo không.</p>
+                <p>Shopee luôn cam kết mọi sản phẩm trên Shopee, đặc biệt là Shopee Mall đều là những sản phẩm chính
+                    hãng, đầy đủ tem nhãn,
+                    bảo hành từ nhà bán hàng. Ngoài ra, Shopee bảo vệ người mua và người bán bằng cách giữ số tiền giao
+                    dịch đến khi người
+                    mua xác nhận đồng ý với đơn hàng và không có yêu cầu khiếu nại, trả hàng hay hoàn tiền nào. Thanh
+                    toán sau đó sẽ được
+                    chuyển đến cho người bán. Đến với Shopee ngay hôm nay để mua hàng online giá rẻ và trải nghiệm dịch
+                    vụ chăm sóc khách
+                    hàng tuyệt vời tại đây. Đặc biệt khi mua sắm trên Shopee Mall, bạn sẽ được miễn phí vận chuyển, giao
+                    hàng tận nơi và 7
+                    ngày miễn phí trả hàng. Ngoài ra, khách hàng có thể sử dụng Shopee Xu để đổi lấy mã giảm giá có giá
+                    trị cao và voucher
+                    dịch vụ hấp dẫn. Tiếp đến là Shopee Home Club, Shopee Mum Club, Shopee Beauty Club và Shopee Book
+                    Club với các ưu đãi
+                    độc quyền từ các thương hiệu lớn có những khách hàng đã đăng ký làm thành viên. Hãy truy cập ngay
+                    Shopee Việt Nam hoặc
+                    tải ngay ứng dụng Shopee về điện thoại ngay hôm nay!</p>
+        </div>
+        <!-- Mở ra dài lắm -->
+        <div class="footer__body">
+            <div class="footer__body-header">
+                <p>Danh Mục</p>
+            </div>
+            <div class="footer__body-body">
+                <div class="footer__body-item">
+                    <div class="footer__body-itemhead">
+                        <a href="#">Thời Trang Nam</a>
+                    </div>
+                    <div class="footer__body-itemsub">
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                    </div>
+                </div>
+                <div class="footer__body-item">
+                    <div class="footer__body-itemhead">
+                        <a href="#">Thời Trang Nữ</a>
+                    </div>
+                    <div class="footer__body-itemsub">
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                    </div>
+                </div>
+                <div class="footer__body-item">
+                    <div class="footer__body-itemhead">
+                        <a href="#">Điện Thoại & Phụ Kiện</a>
+                    </div>
+                    <div class="footer__body-itemsub">
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                    </div>
+                </div>
+                <div class="footer__body-item">
+                    <div class="footer__body-itemhead">
+                        <a href="#">Mẹ & Bé</a>
+                    </div>
+                    <div class="footer__body-itemsub">
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                    </div>
+                </div>
+                <div class="footer__body-item">
+                    <div class="footer__body-itemhead">
+                        <a href="#">Thiết Bị Điện Tử</a>
+                    </div>
+                    <div class="footer__body-itemsub">
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__body-body">
+                <div class="footer__body-item">
+                    <div class="footer__body-itemhead">
+                        <a href="#">Nhà Cửa & Đời Sống</a>
+                    </div>
+                    <div class="footer__body-itemsub">
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                    </div>
+                </div>
+                <div class="footer__body-item">
+                    <div class="footer__body-itemhead">
+                        <a href="#">Máy Tính & Laptop</a>
+                    </div>
+                    <div class="footer__body-itemsub">
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                    </div>
+                </div>
+                <div class="footer__body-item">
+                    <div class="footer__body-itemhead">
+                        <a href="#">Sắc Đẹp</a>
+                    </div>
+                    <div class="footer__body-itemsub">
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                    </div>
+                </div>
+                <div class="footer__body-item">
+                    <div class="footer__body-itemhead">
+                        <a href="#">Máy Ảnh & Máy Quay Phim</a>
+                    </div>
+                    <div class="footer__body-itemsub">
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                    </div>
+                </div>
+                <div class="footer__body-item">
+                    <div class="footer__body-itemhead">
+                        <a href="#">Sức Khỏe</a>
+                    </div>
+                    <div class="footer__body-itemsub">
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__body-body">
+                <div class="footer__body-item">
+                    <div class="footer__body-itemhead">
+                        <a href="#">Đồng Hồ</a>
+                    </div>
+                    <div class="footer__body-itemsub">
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                    </div>
+                </div>
+                <div class="footer__body-item">
+                    <div class="footer__body-itemhead">
+                        <a href="#">Thể Thao & Du Lịch</a>
+                    </div>
+                    <div class="footer__body-itemsub">
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                    </div>
+                </div>
+                <div class="footer__body-item">
+                    <div class="footer__body-itemhead">
+                        <a href="#">Bách Hóa Online</a>
+                    </div>
+                    <div class="footer__body-itemsub">
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                    </div>
+                </div>
+                <div class="footer__body-item">
+                    <div class="footer__body-itemhead">
+                        <a href="#">Ô Tô & Xe Máy & Xe Đạp</a>
+                    </div>
+                    <div class="footer__body-itemsub">
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                    </div>
+                </div>
+                <div class="footer__body-item">
+                    <div class="footer__body-itemhead">
+                        <a href="#">Nhà Sách Online</a>
+                    </div>
+                    <div class="footer__body-itemsub">
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                        <a href="#">Lorem ipsum.</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer__foot grid">
+            <div class="footer__foot-item">
+                <div class="footer__foot-subitem">
+                    <h2>CHĂM SÓC KHÁCH HÀNG
+                    </h2>
+                    <ul>
+                        <li><a href="">Trung Tâm Trợ Giúp</a></li>
+                        <li><a href="">Shopee Blog</a></li>
+                        <li><a href="">Shopee Mall</a></li>
+                        <li><a href="">Hướng Dẫn Mua Hàng</a></li>
+                        <li><a href="">Hướng Dẫn Bán Hàng</a></li>
+                        <li><a href="">Thanh Toán</a></li>
+                        <li><a href="">Shopee Xu</a></li>
+                        <li><a href="">Vận Chuyển</a></li>
+                        <li><a href="">Trả Hàng & Hoàn Tiền</a></li>
+                        <li><a href="">Chăm Sóc Khách Hàng</a></li>
+                        <li><a href="">Chính Sách Bảo Hành</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__foot-item">
+                <div class="footer__foot-subitem">
+                    <h2>VỀ SHOPEE</h2>
+                    <ul>
+                        <li><a href="">Giới Thiệu Về Shopee Việt Nam</a></li>
+                        <li><a href="">Tuyển Dụng</a></li>
+                        <li><a href="">Điều Khoản Shopee</a></li>
+                        <li><a href="">Chính Sách Bảo Mật</a></li>
+                        <li><a href="">Chính Hãng</a></li>
+                        <li><a href="">Kênh Người Bán</a></li>
+                        <li><a href="">Flash Sales</a></li>
+                        <li><a href="">Chương Trình Tiếp Thị Liên Kết Shopee</a></li>
+                        <li><a href="">Liên Hệ Với Truyền Thông</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__foot-item">
+                <div class="footer__foot-subitem">
+                    <h2>THANH TOÁN
+                    </h2>
+                    <ul>
+                        <li>
+                            <img src="./asset/img/thanhtoan.png" alt="">
+                            <img src="./asset/img/thanhtoan1.png" alt="">
+                            <img src="./asset/img/thanhtoan2.png" alt="">
+                            <img src="./asset/img/thanhtoan3.png" alt="">
+                            <img src="./asset/img/thanhtoan4.png" alt="">
+                            <img src="./asset/img/thanhtoan5.png" alt="">
+                            <img src="./asset/img/thanhtoan6.png" alt="">
+                            <img src="./asset/img/thanhtoan7.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__foot-item">
+                <div class="footer__foot-subitem">
+                    <h2>THEO DÕI CHÚNG TÔI TRÊN
+                    </h2>
+                    <ul>
+                        <li><a href="">
+                                <i class="fa-brands fa-facebook"></i>
+                                Facebook
+                            </a></li>
+                        <li><a href="">
+                                <i class="fa-brands fa-instagram"></i>
+                                Instagram
+                            </a></li>
+                        <li><a href="">
+                                <i class="fa-brands fa-linkedin"></i>
+                                LinkedIn
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__foot-item">
+                <div class="footer__foot-subitem">
+                    <h2>TẢI ỨNG DỤNG SHOPEE NGAY THÔI
+                    </h2>
+                    <img src="./asset/img/codeqr.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -465,13 +1767,60 @@
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
         </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/path/to/jquery.min.js"></script>
     <script src="/path/to/slick.js"></script>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+    <script>
+        $('.loop').owlCarousel({
+            center: true,
+            items: 2,
+            loop: true,
+            margin: 10,
+            responsive: {
+                600: {
+                    items: 4
+                }
+            }
+        });
+        $('.nonloop').owlCarousel({
+            center: true,
+            items: 2,
+            loop: false,
+            margin: 10,
+            responsive: {
+                600: {
+                    items: 4
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>

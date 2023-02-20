@@ -727,9 +727,12 @@
 }
 .footer__body-itemsub {
     font-size: 12px;
+    width: 90%;
+    text-align: left;
 }
 .footer__body-itemsub a {
     color: black;
+    padding-right: 5px;
 }
 .footer__body-itemsub a:hover {
     color: red;
